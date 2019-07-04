@@ -34,7 +34,7 @@ def play(songs)
     if input == song || input.to_i == index+1
       puts "Playing #{song}"
     else
-    puts "Invalid input, please try again"
+      break
     end
   end
   #else if !songs.include?(input) || songs[input.to_i].nil?
