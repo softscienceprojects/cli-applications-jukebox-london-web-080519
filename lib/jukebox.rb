@@ -37,7 +37,9 @@ def play(songs)
       break
     end
   end
-  #else if !songs.include?(input) || songs[input.to_i].nil?
+  if !songs.include?(input) || songs[input.to_i].nil?
+    puts "Invalid input, please try again"
+  end
 end
 
 def exit_jukebox
